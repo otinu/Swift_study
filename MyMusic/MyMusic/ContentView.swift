@@ -15,10 +15,7 @@ struct ContentView: View {
         // Z方向(奥行き)の指定
         ZStack {
             Image(.background)
-                .resizable()
-                // セーフエリア外も含めて画面いっぱいに表示
-                .ignoresSafeArea()
-                .scaledToFill()
+                .backgroundModifier()
             
             HStack {
                 Button {
